@@ -7,25 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1BD054CAF8AC41833166DA08 /* libPods-WeatherInZP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2034B5D87EE553C138F6929F /* libPods-WeatherInZP.a */; };
+		7765A23F1D306A670047D107 /* UIViewController+UIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7765A23E1D306A670047D107 /* UIViewController+UIAlert.m */; };
 		77F986811D2D67960034D39F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986801D2D67960034D39F /* main.m */; };
 		77F986841D2D67960034D39F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986831D2D67960034D39F /* AppDelegate.m */; };
-		77F986871D2D67960034D39F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986861D2D67960034D39F /* ViewController.m */; };
 		77F9868A1D2D67960034D39F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F986881D2D67960034D39F /* Main.storyboard */; };
 		77F9868C1D2D67960034D39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77F9868B1D2D67960034D39F /* Assets.xcassets */; };
 		77F9868F1D2D67960034D39F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F9868D1D2D67960034D39F /* LaunchScreen.storyboard */; };
+		77F986991D2D67B30034D39F /* HETableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986981D2D67B30034D39F /* HETableViewController.m */; };
+		77F9869C1D2D67BD0034D39F /* HEDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F9869B1D2D67BD0034D39F /* HEDetailViewController.m */; };
+		77F986A01D2D69430034D39F /* HENetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F9869F1D2D69430034D39F /* HENetworkingManager.m */; };
+		77F986A41D2D72050034D39F /* HEPhenomena.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986A31D2D72050034D39F /* HEPhenomena.m */; };
+		77F986A91D2D73DA0034D39F /* HEPressure.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986A81D2D73DA0034D39F /* HEPressure.m */; };
+		77F986AD1D2D74600034D39F /* HEHeat.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986AC1D2D74600034D39F /* HEHeat.m */; };
+		77F986B11D2D749D0034D39F /* HERwet.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986B01D2D749D0034D39F /* HERwet.m */; };
+		77F986B51D2D74E90034D39F /* HETemperature.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986B41D2D74E90034D39F /* HETemperature.m */; };
+		77F986B91D2D75100034D39F /* HEWind.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986B81D2D75100034D39F /* HEWind.m */; };
+		77F986BD1D2D75980034D39F /* HEForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986BC1D2D75980034D39F /* HEForecast.m */; };
+		77F986C21D2D781D0034D39F /* NSDate+ForecastDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986C11D2D781D0034D39F /* NSDate+ForecastDate.m */; };
+		77F986C61D2D7D6A0034D39F /* HETown.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986C51D2D7D6A0034D39F /* HETown.m */; };
+		77F986CC1D2D87050034D39F /* HEWeatherTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986CA1D2D87050034D39F /* HEWeatherTableViewCell.m */; };
+		77F986CD1D2D87050034D39F /* HEWeatherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77F986CB1D2D87050034D39F /* HEWeatherTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2034B5D87EE553C138F6929F /* libPods-WeatherInZP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherInZP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7765A23D1D306A670047D107 /* UIViewController+UIAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIAlert.h"; sourceTree = "<group>"; };
+		7765A23E1D306A670047D107 /* UIViewController+UIAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIAlert.m"; sourceTree = "<group>"; };
 		77F9867C1D2D67960034D39F /* WeatherInZP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherInZP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F986801D2D67960034D39F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77F986821D2D67960034D39F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77F986831D2D67960034D39F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		77F986851D2D67960034D39F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		77F986861D2D67960034D39F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		77F986891D2D67960034D39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77F9868B1D2D67960034D39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77F9868E1D2D67960034D39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77F986901D2D67960034D39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F986971D2D67B30034D39F /* HETableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HETableViewController.h; sourceTree = "<group>"; };
+		77F986981D2D67B30034D39F /* HETableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HETableViewController.m; sourceTree = "<group>"; };
+		77F9869A1D2D67BD0034D39F /* HEDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEDetailViewController.h; sourceTree = "<group>"; };
+		77F9869B1D2D67BD0034D39F /* HEDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEDetailViewController.m; sourceTree = "<group>"; };
+		77F9869E1D2D69430034D39F /* HENetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HENetworkingManager.h; sourceTree = "<group>"; };
+		77F9869F1D2D69430034D39F /* HENetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HENetworkingManager.m; sourceTree = "<group>"; };
+		77F986A21D2D72050034D39F /* HEPhenomena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEPhenomena.h; sourceTree = "<group>"; };
+		77F986A31D2D72050034D39F /* HEPhenomena.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEPhenomena.m; sourceTree = "<group>"; };
+		77F986A71D2D73DA0034D39F /* HEPressure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEPressure.h; sourceTree = "<group>"; };
+		77F986A81D2D73DA0034D39F /* HEPressure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEPressure.m; sourceTree = "<group>"; };
+		77F986AB1D2D74600034D39F /* HEHeat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEHeat.h; sourceTree = "<group>"; };
+		77F986AC1D2D74600034D39F /* HEHeat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEHeat.m; sourceTree = "<group>"; };
+		77F986AF1D2D749D0034D39F /* HERwet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HERwet.h; sourceTree = "<group>"; };
+		77F986B01D2D749D0034D39F /* HERwet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HERwet.m; sourceTree = "<group>"; };
+		77F986B31D2D74E90034D39F /* HETemperature.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HETemperature.h; sourceTree = "<group>"; };
+		77F986B41D2D74E90034D39F /* HETemperature.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HETemperature.m; sourceTree = "<group>"; };
+		77F986B71D2D75100034D39F /* HEWind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEWind.h; sourceTree = "<group>"; };
+		77F986B81D2D75100034D39F /* HEWind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEWind.m; sourceTree = "<group>"; };
+		77F986BB1D2D75980034D39F /* HEForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEForecast.h; sourceTree = "<group>"; };
+		77F986BC1D2D75980034D39F /* HEForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEForecast.m; sourceTree = "<group>"; };
+		77F986C01D2D781D0034D39F /* NSDate+ForecastDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ForecastDate.h"; sourceTree = "<group>"; };
+		77F986C11D2D781D0034D39F /* NSDate+ForecastDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ForecastDate.m"; sourceTree = "<group>"; };
+		77F986C41D2D7D6A0034D39F /* HETown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HETown.h; sourceTree = "<group>"; };
+		77F986C51D2D7D6A0034D39F /* HETown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HETown.m; sourceTree = "<group>"; };
+		77F986C91D2D87050034D39F /* HEWeatherTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEWeatherTableViewCell.h; sourceTree = "<group>"; };
+		77F986CA1D2D87050034D39F /* HEWeatherTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEWeatherTableViewCell.m; sourceTree = "<group>"; };
+		77F986CB1D2D87050034D39F /* HEWeatherTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HEWeatherTableViewCell.xib; sourceTree = "<group>"; };
+		77F986CE1D2D889E0034D39F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		77F986CF1D2D88E90034D39F /* HEModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HEModels.h; sourceTree = "<group>"; };
+		79127381BFD9AF1662B3D565 /* Pods-WeatherInZP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherInZP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherInZP/Pods-WeatherInZP.debug.xcconfig"; sourceTree = "<group>"; };
+		E0F0F13228B099A75CDF7248 /* Pods-WeatherInZP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherInZP.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeatherInZP/Pods-WeatherInZP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +80,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BD054CAF8AC41833166DA08 /* libPods-WeatherInZP.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66D3BD17608D65A7C9E0331F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79127381BFD9AF1662B3D565 /* Pods-WeatherInZP.debug.xcconfig */,
+				E0F0F13228B099A75CDF7248 /* Pods-WeatherInZP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7765A23C1D306A420047D107 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7765A23D1D306A670047D107 /* UIViewController+UIAlert.h */,
+				7765A23E1D306A670047D107 /* UIViewController+UIAlert.m */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
 		77F986731D2D67960034D39F = {
 			isa = PBXGroup;
 			children = (
 				77F9867E1D2D67960034D39F /* WeatherInZP */,
 				77F9867D1D2D67960034D39F /* Products */,
+				66D3BD17608D65A7C9E0331F /* Pods */,
+				D92C6C2149CAD10DE8160497 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +126,13 @@
 		77F9867E1D2D67960034D39F /* WeatherInZP */ = {
 			isa = PBXGroup;
 			children = (
+				77F986C71D2D86AD0034D39F /* CustomUI */,
+				77F986BE1D2D77E00034D39F /* Category */,
+				77F986A11D2D70AF0034D39F /* Models */,
+				77F9869D1D2D692D0034D39F /* Managers */,
+				77F986961D2D67A30034D39F /* ViewControllers */,
 				77F986821D2D67960034D39F /* AppDelegate.h */,
 				77F986831D2D67960034D39F /* AppDelegate.m */,
-				77F986851D2D67960034D39F /* ViewController.h */,
-				77F986861D2D67960034D39F /* ViewController.m */,
 				77F986881D2D67960034D39F /* Main.storyboard */,
 				77F9868B1D2D67960034D39F /* Assets.xcassets */,
 				77F9868D1D2D67960034D39F /* LaunchScreen.storyboard */,
@@ -75,8 +146,161 @@
 			isa = PBXGroup;
 			children = (
 				77F986801D2D67960034D39F /* main.m */,
+				77F986CE1D2D889E0034D39F /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		77F986961D2D67A30034D39F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				77F986971D2D67B30034D39F /* HETableViewController.h */,
+				77F986981D2D67B30034D39F /* HETableViewController.m */,
+				77F9869A1D2D67BD0034D39F /* HEDetailViewController.h */,
+				77F9869B1D2D67BD0034D39F /* HEDetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		77F9869D1D2D692D0034D39F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				77F9869E1D2D69430034D39F /* HENetworkingManager.h */,
+				77F9869F1D2D69430034D39F /* HENetworkingManager.m */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		77F986A11D2D70AF0034D39F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77F986C31D2D7D2D0034D39F /* Town */,
+				77F986BA1D2D75800034D39F /* Forecast */,
+				77F986AA1D2D744F0034D39F /* Heat */,
+				77F986A51D2D739C0034D39F /* Phenomena */,
+				77F986A61D2D73A90034D39F /* Pressure */,
+				77F986AE1D2D748F0034D39F /* Rwet */,
+				77F986B61D2D75080034D39F /* Wind */,
+				77F986B21D2D74D30034D39F /* Temperature */,
+				77F986CF1D2D88E90034D39F /* HEModels.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		77F986A51D2D739C0034D39F /* Phenomena */ = {
+			isa = PBXGroup;
+			children = (
+				77F986A21D2D72050034D39F /* HEPhenomena.h */,
+				77F986A31D2D72050034D39F /* HEPhenomena.m */,
+			);
+			name = Phenomena;
+			sourceTree = "<group>";
+		};
+		77F986A61D2D73A90034D39F /* Pressure */ = {
+			isa = PBXGroup;
+			children = (
+				77F986A71D2D73DA0034D39F /* HEPressure.h */,
+				77F986A81D2D73DA0034D39F /* HEPressure.m */,
+			);
+			name = Pressure;
+			sourceTree = "<group>";
+		};
+		77F986AA1D2D744F0034D39F /* Heat */ = {
+			isa = PBXGroup;
+			children = (
+				77F986AB1D2D74600034D39F /* HEHeat.h */,
+				77F986AC1D2D74600034D39F /* HEHeat.m */,
+			);
+			name = Heat;
+			sourceTree = "<group>";
+		};
+		77F986AE1D2D748F0034D39F /* Rwet */ = {
+			isa = PBXGroup;
+			children = (
+				77F986AF1D2D749D0034D39F /* HERwet.h */,
+				77F986B01D2D749D0034D39F /* HERwet.m */,
+			);
+			name = Rwet;
+			sourceTree = "<group>";
+		};
+		77F986B21D2D74D30034D39F /* Temperature */ = {
+			isa = PBXGroup;
+			children = (
+				77F986B31D2D74E90034D39F /* HETemperature.h */,
+				77F986B41D2D74E90034D39F /* HETemperature.m */,
+			);
+			name = Temperature;
+			sourceTree = "<group>";
+		};
+		77F986B61D2D75080034D39F /* Wind */ = {
+			isa = PBXGroup;
+			children = (
+				77F986B71D2D75100034D39F /* HEWind.h */,
+				77F986B81D2D75100034D39F /* HEWind.m */,
+			);
+			name = Wind;
+			sourceTree = "<group>";
+		};
+		77F986BA1D2D75800034D39F /* Forecast */ = {
+			isa = PBXGroup;
+			children = (
+				77F986BB1D2D75980034D39F /* HEForecast.h */,
+				77F986BC1D2D75980034D39F /* HEForecast.m */,
+			);
+			name = Forecast;
+			sourceTree = "<group>";
+		};
+		77F986BE1D2D77E00034D39F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7765A23C1D306A420047D107 /* UIViewController */,
+				77F986BF1D2D77F30034D39F /* NSDate */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		77F986BF1D2D77F30034D39F /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				77F986C01D2D781D0034D39F /* NSDate+ForecastDate.h */,
+				77F986C11D2D781D0034D39F /* NSDate+ForecastDate.m */,
+			);
+			name = NSDate;
+			sourceTree = "<group>";
+		};
+		77F986C31D2D7D2D0034D39F /* Town */ = {
+			isa = PBXGroup;
+			children = (
+				77F986C41D2D7D6A0034D39F /* HETown.h */,
+				77F986C51D2D7D6A0034D39F /* HETown.m */,
+			);
+			name = Town;
+			sourceTree = "<group>";
+		};
+		77F986C71D2D86AD0034D39F /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				77F986C81D2D86D10034D39F /* WeatherTableViewCell */,
+			);
+			name = CustomUI;
+			sourceTree = "<group>";
+		};
+		77F986C81D2D86D10034D39F /* WeatherTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				77F986C91D2D87050034D39F /* HEWeatherTableViewCell.h */,
+				77F986CA1D2D87050034D39F /* HEWeatherTableViewCell.m */,
+				77F986CB1D2D87050034D39F /* HEWeatherTableViewCell.xib */,
+			);
+			name = WeatherTableViewCell;
+			sourceTree = "<group>";
+		};
+		D92C6C2149CAD10DE8160497 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2034B5D87EE553C138F6929F /* libPods-WeatherInZP.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +310,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77F986931D2D67960034D39F /* Build configuration list for PBXNativeTarget "WeatherInZP" */;
 			buildPhases = (
+				8439187B3255A21639556842 /* [CP] Check Pods Manifest.lock */,
 				77F986781D2D67960034D39F /* Sources */,
 				77F986791D2D67960034D39F /* Frameworks */,
 				77F9867A1D2D67960034D39F /* Resources */,
+				1022C80CE42357B98DF73EFE /* [CP] Embed Pods Frameworks */,
+				25878CEA9974FDA0690AFEBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,19 +367,81 @@
 				77F9868F1D2D67960034D39F /* LaunchScreen.storyboard in Resources */,
 				77F9868C1D2D67960034D39F /* Assets.xcassets in Resources */,
 				77F9868A1D2D67960034D39F /* Main.storyboard in Resources */,
+				77F986CD1D2D87050034D39F /* HEWeatherTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1022C80CE42357B98DF73EFE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherInZP/Pods-WeatherInZP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25878CEA9974FDA0690AFEBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeatherInZP/Pods-WeatherInZP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8439187B3255A21639556842 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		77F986781D2D67960034D39F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77F986871D2D67960034D39F /* ViewController.m in Sources */,
+				77F986C61D2D7D6A0034D39F /* HETown.m in Sources */,
+				77F986CC1D2D87050034D39F /* HEWeatherTableViewCell.m in Sources */,
+				77F986B91D2D75100034D39F /* HEWind.m in Sources */,
+				7765A23F1D306A670047D107 /* UIViewController+UIAlert.m in Sources */,
+				77F9869C1D2D67BD0034D39F /* HEDetailViewController.m in Sources */,
+				77F986B11D2D749D0034D39F /* HERwet.m in Sources */,
+				77F986A41D2D72050034D39F /* HEPhenomena.m in Sources */,
+				77F986AD1D2D74600034D39F /* HEHeat.m in Sources */,
 				77F986841D2D67960034D39F /* AppDelegate.m in Sources */,
+				77F986B51D2D74E90034D39F /* HETemperature.m in Sources */,
+				77F986A91D2D73DA0034D39F /* HEPressure.m in Sources */,
+				77F986991D2D67B30034D39F /* HETableViewController.m in Sources */,
 				77F986811D2D67960034D39F /* main.m in Sources */,
+				77F986A01D2D69430034D39F /* HENetworkingManager.m in Sources */,
+				77F986C21D2D781D0034D39F /* NSDate+ForecastDate.m in Sources */,
+				77F986BD1D2D75980034D39F /* HEForecast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,8 +551,11 @@
 		};
 		77F986941D2D67960034D39F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79127381BFD9AF1662B3D565 /* Pods-WeatherInZP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeatherInZP/PrefixHeader.pch;
 				INFOPLIST_FILE = WeatherInZP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HE.WeatherInZP;
@@ -273,8 +565,11 @@
 		};
 		77F986951D2D67960034D39F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0F0F13228B099A75CDF7248 /* Pods-WeatherInZP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = WeatherInZP/PrefixHeader.pch;
 				INFOPLIST_FILE = WeatherInZP/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HE.WeatherInZP;
@@ -301,6 +596,7 @@
 				77F986951D2D67960034D39F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

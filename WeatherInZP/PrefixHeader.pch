@@ -1,0 +1,14 @@
+//
+//  PrefixHeader.pch
+//  WeatherInZP
+//
+//  Created by Виктор on 06.07.16.
+//  Copyright © 2016 Hegefix. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "HEModels.h"
+
+#endif /* PrefixHeader_pch */

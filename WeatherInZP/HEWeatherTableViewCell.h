@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HEWeatherTableViewCell.h
 //  WeatherInZP
 //
 //  Created by Виктор on 06.07.16.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface HEWeatherTableViewCell : UITableViewCell
 
+- (void)loadWithForecast:(HEForecast *)forecast;
 
 @end
-

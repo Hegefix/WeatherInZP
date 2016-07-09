@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="95" id="KGk-i7-Jjw" customClass="HEWeatherTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.84999999999999998" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3J-oM-sxQ">
+                        <rect key="frame" x="8" y="8" width="36" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JH0-oH-ERL">
+                        <rect key="frame" x="8" y="66" width="64.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tod" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8o-hk-nW5">
+                        <rect key="frame" x="338" y="8" width="29" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fW5-p2-OTG">
+                        <rect key="frame" x="335" y="54" width="32" height="32"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JH0-oH-ERL" secondAttribute="trailing" constant="4" id="JKW-Am-dqo"/>
+                    <constraint firstItem="JH0-oH-ERL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="L6q-LX-bZm"/>
+                    <constraint firstItem="O3J-oM-sxQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Pkm-tl-BvP"/>
+                    <constraint firstItem="fW5-p2-OTG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="54" id="R8c-iu-2fx"/>
+                    <constraint firstAttribute="bottom" secondItem="fW5-p2-OTG" secondAttribute="bottom" constant="8.5" id="UIF-r6-8eT"/>
+                    <constraint firstItem="n8o-hk-nW5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Vqc-Fe-OCb"/>
+                    <constraint firstItem="O3J-oM-sxQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="i9Q-wV-aUw"/>
+                    <constraint firstAttribute="trailing" secondItem="n8o-hk-nW5" secondAttribute="trailing" constant="8" id="lNL-SU-aJU"/>
+                    <constraint firstAttribute="trailing" secondItem="fW5-p2-OTG" secondAttribute="trailing" constant="8" id="p14-hJ-oAG"/>
+                    <constraint firstAttribute="bottom" secondItem="JH0-oH-ERL" secondAttribute="bottom" constant="8" id="sMu-oc-qnm"/>
+                    <constraint firstItem="n8o-hk-nW5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O3J-oM-sxQ" secondAttribute="trailing" constant="4" id="wjO-MC-cLL"/>
+                    <constraint firstItem="fW5-p2-OTG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="327" id="xsC-6V-NkZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="O3J-oM-sxQ" id="Vc1-KC-TJm"/>
+                <outlet property="todLabel" destination="n8o-hk-nW5" id="hXs-Nd-Ppm"/>
+                <outlet property="weatherIconView" destination="fW5-p2-OTG" id="5R0-iE-xw0"/>
+                <outlet property="weatherLabel" destination="JH0-oH-ERL" id="O5A-Px-N97"/>
+            </connections>
+            <point key="canvasLocation" x="526.5" y="350.5"/>
+        </tableViewCell>
+    </objects>
+</document>
