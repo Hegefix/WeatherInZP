@@ -38,13 +38,16 @@
     
     HENetworkingManager *networkingManager = [[HENetworkingManager alloc] init];
     NSDictionary *xmlDictionary = [networkingManager getXMLDictionary];
-    NSDictionary *forecastInfo = [[[xmlDictionary objectForKey:@"MMWEATHER"] objectForKey:@"REPORT"] objectForKey:@"TOWN"];
-    
-    self.town = [[HETown alloc] initWithDictionary:forecastInfo];
-    [self.tableView reloadData];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-    
-    self.title = self.town.name;
+    if (xmlDictionary != nil) {
+        
+        NSDictionary *forecastInfo = [[[xmlDictionary objectForKey:@"MMWEATHER"] objectForKey:@"REPORT"] objectForKey:@"TOWN"];
+        
+        self.town = [[HETown alloc] initWithDictionary:forecastInfo];
+        [self.tableView reloadData];
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+        
+        self.title = self.town.name;
+    }
 }
 
 #pragma mark - Notifications -

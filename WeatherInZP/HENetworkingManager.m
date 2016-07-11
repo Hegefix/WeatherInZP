@@ -9,6 +9,7 @@
 #import "HENetworkingManager.h"
 #import "ASIHTTPRequest.h"
 #import "XMLReader.h"
+#import "Reachability.h"
 
 static NSString *const HEWeatherHostData = @"http://informer.gismeteo.ru/xml/34601_1.xml";
 NSString *const HEConnectionFailureNotification = @"HEConnectionFailureNotification";
@@ -17,29 +18,41 @@ NSString *const HEConnectionFailureNotification = @"HEConnectionFailureNotificat
 
 - (NSDictionary *)getXMLDictionary {
     
-    NSURL *url = [NSURL URLWithString:HEWeatherHostData];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    Reachability *reach = [Reachability reachabilityWithHostName:HEWeatherHostData];
+    [reach startNotifier];
     
-    [request startSynchronous];
-    
-    NSDictionary *xmlDictionary = [NSDictionary dictionary];
-    NSError *error = [request error];
-    if (!error) {
+    if ([reach isReachable]) {
         
-        NSString *response = [request responseString];
+        NSURL *url = [NSURL URLWithString:HEWeatherHostData];
+        ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
         
-        NSError *parseError = nil;
-        xmlDictionary = [XMLReader dictionaryForXMLString:response options:XMLReaderOptionsProcessNamespaces error:&parseError];
+        [request startSynchronous];
         
-        //NSLog(@"%@", response);
-        //NSLog(@"%@", xmlDictionary);
+        NSDictionary *xmlDictionary = [NSDictionary dictionary];
+        NSError *error = [request error];
+        if (!error) {
+            
+            NSString *response = [request responseString];
+            
+            NSError *parseError = nil;
+            xmlDictionary = [XMLReader dictionaryForXMLString:response options:XMLReaderOptionsProcessNamespaces error:&parseError];
+            
+            //NSLog(@"%@", response);
+            //NSLog(@"%@", xmlDictionary);
+            
+            return xmlDictionary;
+            
+        } else {
+            //NSLog(@"%@", [error localizedDescription]);
+        }
         
     } else {
         
         [[NSNotificationCenter defaultCenter] postNotificationName:HEConnectionFailureNotification object:self];
         //NSLog(@"%@", [error localizedDescription]);
+        
     }
-    return xmlDictionary;
+    return nil;
 }
 
 @end
