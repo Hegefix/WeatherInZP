@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -33,25 +32,27 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fW5-p2-OTG">
-                        <rect key="frame" x="335" y="54" width="32" height="32"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fW5-p2-OTG">
+                        <rect key="frame" x="331" y="51" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="mIW-Xj-WB3"/>
+                            <constraint firstAttribute="width" constant="43" id="zfD-ay-iNd"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JH0-oH-ERL" secondAttribute="trailing" constant="4" id="JKW-Am-dqo"/>
+                    <constraint firstAttribute="bottom" secondItem="fW5-p2-OTG" secondAttribute="bottom" constant="0.5" id="AnH-eJ-O3r"/>
+                    <constraint firstItem="fW5-p2-OTG" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="JH0-oH-ERL" secondAttribute="trailing" constant="4" id="Bu4-uT-fNN"/>
                     <constraint firstItem="JH0-oH-ERL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="L6q-LX-bZm"/>
+                    <constraint firstAttribute="trailing" secondItem="fW5-p2-OTG" secondAttribute="trailing" constant="1" id="O2a-2J-MlD"/>
                     <constraint firstItem="O3J-oM-sxQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Pkm-tl-BvP"/>
-                    <constraint firstItem="fW5-p2-OTG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="54" id="R8c-iu-2fx"/>
-                    <constraint firstAttribute="bottom" secondItem="fW5-p2-OTG" secondAttribute="bottom" constant="8.5" id="UIF-r6-8eT"/>
                     <constraint firstItem="n8o-hk-nW5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Vqc-Fe-OCb"/>
                     <constraint firstItem="O3J-oM-sxQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="i9Q-wV-aUw"/>
                     <constraint firstAttribute="trailing" secondItem="n8o-hk-nW5" secondAttribute="trailing" constant="8" id="lNL-SU-aJU"/>
-                    <constraint firstAttribute="trailing" secondItem="fW5-p2-OTG" secondAttribute="trailing" constant="8" id="p14-hJ-oAG"/>
                     <constraint firstAttribute="bottom" secondItem="JH0-oH-ERL" secondAttribute="bottom" constant="8" id="sMu-oc-qnm"/>
                     <constraint firstItem="n8o-hk-nW5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O3J-oM-sxQ" secondAttribute="trailing" constant="4" id="wjO-MC-cLL"/>
-                    <constraint firstItem="fW5-p2-OTG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="327" id="xsC-6V-NkZ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

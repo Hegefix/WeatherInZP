@@ -11,7 +11,7 @@
 
 @interface HEWeatherTableViewCell ()
 
-@property (strong, nonatomic) IBOutlet UIImageView *weatherIconView;  //??? strong? weak?
+@property (weak, nonatomic) IBOutlet UIImageView *weatherIconView;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UILabel *weatherLabel;
 @property (weak, nonatomic) IBOutlet UILabel *todLabel;
@@ -33,8 +33,7 @@
     NSString *precipitation = [forecast.phenomena precipitationDescription];
     self.weatherLabel.text = [NSString stringWithFormat:@"%@ %@, %@", temperature, cloudines, precipitation];
     self.todLabel.text = [forecast timeOfDayDescription];
-    //self.weatherIconView = [[UIImageView alloc] init]; ???
-    //self.weatherIconView.image = nil;                  ???
+    self.weatherIconView.image = [self _weatherIconWithForecast:forecast];
 }
 
 #pragma mark - Private - 
@@ -43,64 +42,63 @@
     [self.dateLabel setTextColor:[UIColor whiteColor]];
     [self.weatherLabel setTextColor:[UIColor whiteColor]];
     [self.todLabel setTextColor:[UIColor whiteColor]];
-    
-    //[self addSubview:self.weatherIconView]; ???
 }
 
-- (UIImage *)weatherIconWithForecast:(HEForecast *)forecast {
+- (UIImage *)_weatherIconWithForecast:(HEForecast *)forecast {
     
     if (forecast.phenomena.precipitation == 10 || forecast.phenomena.precipitation == 9) {
+        
         //no precipitation
         switch (forecast.phenomena.cloudiness) {
             case 0:
-                //ясно
+                return [UIImage imageNamed:(forecast.tod == 0)?(@"half-moon-icon"):(@"sunny-icon")];
                 break;
                 
             case 1:
-                //малооблачно
+                return [UIImage imageNamed:(forecast.tod == 0)?(@"night-cloud-icon"):(@"sunshine-cloud")];
                 break;
             
             case 2:
-                //облачно
+                return [UIImage imageNamed:@"partially-cloud-icon"];
                 break;
                 
             case 3:
-                //пасмурно
+                return [UIImage imageNamed:@"full-cloud-icon"];
                 break;
                 
             default:
-                //error
+                return nil;
                 break;
         }
         
     } else {
+        
         //precipitation
         switch (forecast.phenomena.precipitation) {
             case 4:
-                //дождь
+                return [UIImage imageNamed:@"raining-icon"];
                 break;
                 
             case 5:
-                //ливень
+                return [UIImage imageNamed:@"mostly-raining-icon"];
                 break;
                 
             case 6:
-                //снег
+                return [UIImage imageNamed:@"snow-icon"];
                 break;
                 
             case 7:
-                //снегопад
+                return [UIImage imageNamed:@"snow-icon"];
                 break;
                 
             case 8:
-                //гроза
+                return [UIImage imageNamed:@"thunderstorm-icon"];
                 break;
                 
             default:
-                //error
+                return nil;
                 break;
         }
-        
     }
     return nil;
 }

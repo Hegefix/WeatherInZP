@@ -52,6 +52,8 @@
 - (void)receiveConectionFailureNote:(NSNotification *)notification {
     if ([notification.name isEqualToString:HEConnectionFailureNotification]) {
         [self showAlertWithText:@"Отсутсвует интернет подключение"];
+        
+        self.title = @"Нет данных";
     }
 }
 

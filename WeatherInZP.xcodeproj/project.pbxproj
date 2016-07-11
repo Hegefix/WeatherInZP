@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1BD054CAF8AC41833166DA08 /* libPods-WeatherInZP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2034B5D87EE553C138F6929F /* libPods-WeatherInZP.a */; };
 		7765A23F1D306A670047D107 /* UIViewController+UIAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 7765A23E1D306A670047D107 /* UIViewController+UIAlert.m */; };
+		77CF9D7F1D33747200CBCF95 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 77CF9D7E1D33747200CBCF95 /* .gitignore */; };
 		77F986811D2D67960034D39F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986801D2D67960034D39F /* main.m */; };
 		77F986841D2D67960034D39F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F986831D2D67960034D39F /* AppDelegate.m */; };
 		77F9868A1D2D67960034D39F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77F986881D2D67960034D39F /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 		2034B5D87EE553C138F6929F /* libPods-WeatherInZP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeatherInZP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7765A23D1D306A670047D107 /* UIViewController+UIAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+UIAlert.h"; sourceTree = "<group>"; };
 		7765A23E1D306A670047D107 /* UIViewController+UIAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+UIAlert.m"; sourceTree = "<group>"; };
+		77CF9D7E1D33747200CBCF95 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		77F9867C1D2D67960034D39F /* WeatherInZP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherInZP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F986801D2D67960034D39F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		77F986821D2D67960034D39F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				77F986801D2D67960034D39F /* main.m */,
 				77F986CE1D2D889E0034D39F /* PrefixHeader.pch */,
+				77CF9D7E1D33747200CBCF95 /* .gitignore */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77CF9D7F1D33747200CBCF95 /* .gitignore in Resources */,
 				77F9868F1D2D67960034D39F /* LaunchScreen.storyboard in Resources */,
 				77F9868C1D2D67960034D39F /* Assets.xcassets in Resources */,
 				77F9868A1D2D67960034D39F /* Main.storyboard in Resources */,
