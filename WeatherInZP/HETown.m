@@ -19,6 +19,7 @@
         self.index = [[dictionary objectForKey:@"index"] integerValue];
         
         NSString *stringURL = [dictionary objectForKey:@"sname"];
+        /* works only with deprecated method */
         NSString *town = [stringURL stringByReplacingPercentEscapesUsingEncoding:NSWindowsCP1251StringEncoding];
         self.name = town;
         
