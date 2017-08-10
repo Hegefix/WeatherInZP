@@ -119,6 +119,8 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(receiveConectionFailureNote:)
                                                  name:HEConnectionFailureNotification object:nil];
+    
+    
 }
 
 @end

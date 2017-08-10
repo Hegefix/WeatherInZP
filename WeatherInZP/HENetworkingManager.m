@@ -43,13 +43,12 @@ NSString *const HEConnectionFailureNotification = @"HEConnectionFailureNotificat
             return xmlDictionary;
             
         } else {
-            //NSLog(@"%@", [error localizedDescription]);
+            NSLog(@"%@", [error localizedDescription]);
         }
         
     } else {
         
         [[NSNotificationCenter defaultCenter] postNotificationName:HEConnectionFailureNotification object:self];
-        //NSLog(@"%@", [error localizedDescription]);
         
     }
     return nil;
